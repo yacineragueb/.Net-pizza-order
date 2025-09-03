@@ -4,7 +4,7 @@
 A simple **desktop application** built with **C#** and **Windows Forms** that simulates ordering a pizza.
 
 ## 🖥️ Screenshots
-[Pizza Order Screenshort]("/images/pizza-order.png")
+!["Pizza Order Screenshort"](/images/pizza-order.png)
 
 ## 🛠️ Requirements
 - .NET Framework / .NET 6+
