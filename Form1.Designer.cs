@@ -60,27 +60,33 @@
             this.chbMashrooms = new System.Windows.Forms.CheckBox();
             this.chbExtraCheese = new System.Windows.Forms.CheckBox();
             this.gbFormPizza = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.gbWhereToEat.SuspendLayout();
             this.gbToppings.SuspendLayout();
             this.gbFormPizza.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // lTitle
             // 
             this.lTitle.AutoSize = true;
-            this.lTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lTitle.ForeColor = System.Drawing.Color.Red;
+            this.lTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lTitle.Font = new System.Drawing.Font("UKIJ Diwani Tom", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTitle.ForeColor = System.Drawing.Color.Yellow;
             this.lTitle.Location = new System.Drawing.Point(255, 9);
             this.lTitle.Name = "lTitle";
-            this.lTitle.Size = new System.Drawing.Size(347, 46);
+            this.lTitle.Size = new System.Drawing.Size(327, 56);
             this.lTitle.TabIndex = 0;
             this.lTitle.Text = "Order your pizza";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.lTotalPriceValue);
             this.groupBox1.Controls.Add(this.lWhereToEatValue);
             this.groupBox1.Controls.Add(this.lCrustTypeValue);
@@ -91,9 +97,10 @@
             this.groupBox1.Controls.Add(this.lCrustType);
             this.groupBox1.Controls.Add(this.lToppings);
             this.groupBox1.Controls.Add(this.lSize);
-            this.groupBox1.Location = new System.Drawing.Point(587, 91);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(587, 73);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(283, 282);
+            this.groupBox1.Size = new System.Drawing.Size(283, 310);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Order Summary";
@@ -101,123 +108,129 @@
             // lTotalPriceValue
             // 
             this.lTotalPriceValue.AutoSize = true;
-            this.lTotalPriceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTotalPriceValue.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTotalPriceValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lTotalPriceValue.Location = new System.Drawing.Point(109, 224);
+            this.lTotalPriceValue.Location = new System.Drawing.Point(113, 267);
             this.lTotalPriceValue.Name = "lTotalPriceValue";
-            this.lTotalPriceValue.Size = new System.Drawing.Size(48, 25);
+            this.lTotalPriceValue.Size = new System.Drawing.Size(56, 33);
             this.lTotalPriceValue.TabIndex = 9;
             this.lTotalPriceValue.Text = "$20";
             // 
             // lWhereToEatValue
             // 
             this.lWhereToEatValue.AutoSize = true;
-            this.lWhereToEatValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.lWhereToEatValue.Location = new System.Drawing.Point(126, 192);
+            this.lWhereToEatValue.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lWhereToEatValue.Location = new System.Drawing.Point(130, 193);
             this.lWhereToEatValue.Name = "lWhereToEatValue";
-            this.lWhereToEatValue.Size = new System.Drawing.Size(44, 17);
+            this.lWhereToEatValue.Size = new System.Drawing.Size(54, 20);
             this.lWhereToEatValue.TabIndex = 8;
             this.lWhereToEatValue.Text = "Eat in";
             // 
             // lCrustTypeValue
             // 
             this.lCrustTypeValue.AutoSize = true;
-            this.lCrustTypeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.lCrustTypeValue.Location = new System.Drawing.Point(111, 152);
+            this.lCrustTypeValue.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCrustTypeValue.Location = new System.Drawing.Point(115, 153);
             this.lCrustTypeValue.Name = "lCrustTypeValue";
-            this.lCrustTypeValue.Size = new System.Drawing.Size(36, 17);
+            this.lCrustTypeValue.Size = new System.Drawing.Size(43, 20);
             this.lCrustTypeValue.TabIndex = 7;
             this.lCrustTypeValue.Text = "Thin";
             // 
             // lToppingsValue
             // 
             this.lToppingsValue.AutoSize = true;
-            this.lToppingsValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.lToppingsValue.Location = new System.Drawing.Point(40, 93);
-            this.lToppingsValue.MaximumSize = new System.Drawing.Size(220, 0);
+            this.lToppingsValue.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lToppingsValue.Location = new System.Drawing.Point(44, 94);
+            this.lToppingsValue.MaximumSize = new System.Drawing.Size(221, 0);
             this.lToppingsValue.Name = "lToppingsValue";
-            this.lToppingsValue.Size = new System.Drawing.Size(143, 17);
+            this.lToppingsValue.Size = new System.Drawing.Size(152, 20);
             this.lToppingsValue.TabIndex = 6;
             this.lToppingsValue.Text = "There is no Toppings";
             // 
             // lSizeValue
             // 
             this.lSizeValue.AutoSize = true;
-            this.lSizeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lSizeValue.Location = new System.Drawing.Point(63, 32);
+            this.lSizeValue.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lSizeValue.Location = new System.Drawing.Point(67, 33);
             this.lSizeValue.Name = "lSizeValue";
-            this.lSizeValue.Size = new System.Drawing.Size(41, 16);
+            this.lSizeValue.Size = new System.Drawing.Size(47, 20);
             this.lSizeValue.TabIndex = 5;
             this.lSizeValue.Text = "Small";
             // 
             // lTotalPrice
             // 
             this.lTotalPrice.AutoSize = true;
-            this.lTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lTotalPrice.Location = new System.Drawing.Point(20, 231);
+            this.lTotalPrice.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTotalPrice.Location = new System.Drawing.Point(23, 273);
             this.lTotalPrice.Name = "lTotalPrice";
-            this.lTotalPrice.Size = new System.Drawing.Size(97, 17);
+            this.lTotalPrice.Size = new System.Drawing.Size(93, 20);
             this.lTotalPrice.TabIndex = 4;
             this.lTotalPrice.Text = "Total Price: ";
             // 
             // lWhereToEat
             // 
             this.lWhereToEat.AutoSize = true;
-            this.lWhereToEat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lWhereToEat.Location = new System.Drawing.Point(20, 192);
+            this.lWhereToEat.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lWhereToEat.Location = new System.Drawing.Point(23, 193);
             this.lWhereToEat.Name = "lWhereToEat";
-            this.lWhereToEat.Size = new System.Drawing.Size(112, 17);
+            this.lWhereToEat.Size = new System.Drawing.Size(104, 20);
             this.lWhereToEat.TabIndex = 3;
             this.lWhereToEat.Text = "Where to eat: ";
             // 
             // lCrustType
             // 
             this.lCrustType.AutoSize = true;
-            this.lCrustType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lCrustType.Location = new System.Drawing.Point(20, 152);
+            this.lCrustType.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCrustType.Location = new System.Drawing.Point(23, 153);
             this.lCrustType.Name = "lCrustType";
-            this.lCrustType.Size = new System.Drawing.Size(97, 17);
+            this.lCrustType.Size = new System.Drawing.Size(93, 20);
             this.lCrustType.TabIndex = 2;
             this.lCrustType.Text = "Crust Type: ";
             // 
             // lToppings
             // 
             this.lToppings.AutoSize = true;
-            this.lToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lToppings.Location = new System.Drawing.Point(20, 67);
+            this.lToppings.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lToppings.Location = new System.Drawing.Point(23, 68);
             this.lToppings.Name = "lToppings";
-            this.lToppings.Size = new System.Drawing.Size(85, 17);
+            this.lToppings.Size = new System.Drawing.Size(80, 20);
             this.lToppings.TabIndex = 1;
             this.lToppings.Text = "Toppings: ";
             // 
             // lSize
             // 
             this.lSize.AutoSize = true;
-            this.lSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lSize.Location = new System.Drawing.Point(20, 31);
+            this.lSize.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lSize.Location = new System.Drawing.Point(23, 32);
             this.lSize.Name = "lSize";
-            this.lSize.Size = new System.Drawing.Size(49, 17);
+            this.lSize.Size = new System.Drawing.Size(46, 20);
             this.lSize.TabIndex = 0;
             this.lSize.Text = "Size: ";
             // 
             // btnOrderPizza
             // 
+            this.btnOrderPizza.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnOrderPizza.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrderPizza.ForeColor = System.Drawing.Color.White;
             this.btnOrderPizza.Location = new System.Drawing.Point(263, 389);
             this.btnOrderPizza.Name = "btnOrderPizza";
             this.btnOrderPizza.Size = new System.Drawing.Size(138, 47);
             this.btnOrderPizza.TabIndex = 10;
             this.btnOrderPizza.Text = "Order Pizza";
-            this.btnOrderPizza.UseVisualStyleBackColor = true;
+            this.btnOrderPizza.UseVisualStyleBackColor = false;
             this.btnOrderPizza.Click += new System.EventHandler(this.btnOrderPizza_Click);
             // 
             // btnResetForm
             // 
-            this.btnResetForm.Location = new System.Drawing.Point(420, 389);
+            this.btnResetForm.BackColor = System.Drawing.Color.Gold;
+            this.btnResetForm.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetForm.ForeColor = System.Drawing.Color.White;
+            this.btnResetForm.Location = new System.Drawing.Point(431, 389);
             this.btnResetForm.Name = "btnResetForm";
             this.btnResetForm.Size = new System.Drawing.Size(138, 47);
             this.btnResetForm.TabIndex = 11;
             this.btnResetForm.Text = "Reset Form";
-            this.btnResetForm.UseVisualStyleBackColor = true;
+            this.btnResetForm.UseVisualStyleBackColor = false;
             this.btnResetForm.Click += new System.EventHandler(this.btnResetForm_Click);
             // 
             // gbSize
@@ -225,6 +238,7 @@
             this.gbSize.Controls.Add(this.rbLargSize);
             this.gbSize.Controls.Add(this.rbMeduimSize);
             this.gbSize.Controls.Add(this.rbSmallSize);
+            this.gbSize.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSize.Location = new System.Drawing.Point(14, 18);
             this.gbSize.Name = "gbSize";
             this.gbSize.Size = new System.Drawing.Size(200, 149);
@@ -237,7 +251,7 @@
             this.rbLargSize.AutoSize = true;
             this.rbLargSize.Location = new System.Drawing.Point(22, 113);
             this.rbLargSize.Name = "rbLargSize";
-            this.rbLargSize.Size = new System.Drawing.Size(55, 20);
+            this.rbLargSize.Size = new System.Drawing.Size(61, 24);
             this.rbLargSize.TabIndex = 4;
             this.rbLargSize.TabStop = true;
             this.rbLargSize.Tag = "35";
@@ -250,7 +264,7 @@
             this.rbMeduimSize.AutoSize = true;
             this.rbMeduimSize.Location = new System.Drawing.Point(22, 72);
             this.rbMeduimSize.Name = "rbMeduimSize";
-            this.rbMeduimSize.Size = new System.Drawing.Size(76, 20);
+            this.rbMeduimSize.Size = new System.Drawing.Size(89, 24);
             this.rbMeduimSize.TabIndex = 3;
             this.rbMeduimSize.TabStop = true;
             this.rbMeduimSize.Tag = "30";
@@ -264,7 +278,7 @@
             this.rbSmallSize.Checked = true;
             this.rbSmallSize.Location = new System.Drawing.Point(22, 31);
             this.rbSmallSize.Name = "rbSmallSize";
-            this.rbSmallSize.Size = new System.Drawing.Size(62, 20);
+            this.rbSmallSize.Size = new System.Drawing.Size(69, 24);
             this.rbSmallSize.TabIndex = 2;
             this.rbSmallSize.TabStop = true;
             this.rbSmallSize.Tag = "20";
@@ -288,7 +302,7 @@
             this.rbThickCrust.AutoSize = true;
             this.rbThickCrust.Location = new System.Drawing.Point(22, 72);
             this.rbThickCrust.Name = "rbThickCrust";
-            this.rbThickCrust.Size = new System.Drawing.Size(61, 20);
+            this.rbThickCrust.Size = new System.Drawing.Size(70, 24);
             this.rbThickCrust.TabIndex = 3;
             this.rbThickCrust.TabStop = true;
             this.rbThickCrust.Tag = "5";
@@ -302,7 +316,7 @@
             this.rbThinCrust.Checked = true;
             this.rbThinCrust.Location = new System.Drawing.Point(22, 31);
             this.rbThinCrust.Name = "rbThinCrust";
-            this.rbThinCrust.Size = new System.Drawing.Size(54, 20);
+            this.rbThinCrust.Size = new System.Drawing.Size(64, 24);
             this.rbThinCrust.TabIndex = 2;
             this.rbThinCrust.TabStop = true;
             this.rbThinCrust.Tag = "0";
@@ -326,7 +340,7 @@
             this.rbTakeOut.AutoSize = true;
             this.rbTakeOut.Location = new System.Drawing.Point(22, 72);
             this.rbTakeOut.Name = "rbTakeOut";
-            this.rbTakeOut.Size = new System.Drawing.Size(81, 20);
+            this.rbTakeOut.Size = new System.Drawing.Size(91, 24);
             this.rbTakeOut.TabIndex = 3;
             this.rbTakeOut.TabStop = true;
             this.rbTakeOut.Text = "Take out";
@@ -339,7 +353,7 @@
             this.rbEatIn.Checked = true;
             this.rbEatIn.Location = new System.Drawing.Point(22, 31);
             this.rbEatIn.Name = "rbEatIn";
-            this.rbEatIn.Size = new System.Drawing.Size(61, 20);
+            this.rbEatIn.Size = new System.Drawing.Size(75, 24);
             this.rbEatIn.TabIndex = 2;
             this.rbEatIn.TabStop = true;
             this.rbEatIn.Text = "Eat in";
@@ -366,7 +380,7 @@
             this.chbGreenPeppers.AutoSize = true;
             this.chbGreenPeppers.Location = new System.Drawing.Point(155, 113);
             this.chbGreenPeppers.Name = "chbGreenPeppers";
-            this.chbGreenPeppers.Size = new System.Drawing.Size(121, 20);
+            this.chbGreenPeppers.Size = new System.Drawing.Size(127, 24);
             this.chbGreenPeppers.TabIndex = 5;
             this.chbGreenPeppers.Tag = "2";
             this.chbGreenPeppers.Text = "Green Peppers";
@@ -378,7 +392,7 @@
             this.chbOlives.AutoSize = true;
             this.chbOlives.Location = new System.Drawing.Point(155, 72);
             this.chbOlives.Name = "chbOlives";
-            this.chbOlives.Size = new System.Drawing.Size(67, 20);
+            this.chbOlives.Size = new System.Drawing.Size(73, 24);
             this.chbOlives.TabIndex = 4;
             this.chbOlives.Tag = "1";
             this.chbOlives.Text = "Olives";
@@ -390,7 +404,7 @@
             this.chbOnion.AutoSize = true;
             this.chbOnion.Location = new System.Drawing.Point(155, 31);
             this.chbOnion.Name = "chbOnion";
-            this.chbOnion.Size = new System.Drawing.Size(64, 20);
+            this.chbOnion.Size = new System.Drawing.Size(74, 24);
             this.chbOnion.TabIndex = 3;
             this.chbOnion.Tag = "1";
             this.chbOnion.Text = "Onion";
@@ -402,7 +416,7 @@
             this.chbTomatoes.AutoSize = true;
             this.chbTomatoes.Location = new System.Drawing.Point(22, 114);
             this.chbTomatoes.Name = "chbTomatoes";
-            this.chbTomatoes.Size = new System.Drawing.Size(91, 20);
+            this.chbTomatoes.Size = new System.Drawing.Size(94, 24);
             this.chbTomatoes.TabIndex = 2;
             this.chbTomatoes.Tag = "2";
             this.chbTomatoes.Text = "Tomatoes";
@@ -414,7 +428,7 @@
             this.chbMashrooms.AutoSize = true;
             this.chbMashrooms.Location = new System.Drawing.Point(22, 72);
             this.chbMashrooms.Name = "chbMashrooms";
-            this.chbMashrooms.Size = new System.Drawing.Size(99, 20);
+            this.chbMashrooms.Size = new System.Drawing.Size(111, 24);
             this.chbMashrooms.TabIndex = 1;
             this.chbMashrooms.Tag = "3";
             this.chbMashrooms.Text = "Mushrooms";
@@ -426,7 +440,7 @@
             this.chbExtraCheese.AutoSize = true;
             this.chbExtraCheese.Location = new System.Drawing.Point(22, 31);
             this.chbExtraCheese.Name = "chbExtraCheese";
-            this.chbExtraCheese.Size = new System.Drawing.Size(109, 20);
+            this.chbExtraCheese.Size = new System.Drawing.Size(120, 24);
             this.chbExtraCheese.TabIndex = 0;
             this.chbExtraCheese.Tag = "3";
             this.chbExtraCheese.Text = "Extra Cheese";
@@ -439,17 +453,53 @@
             this.gbFormPizza.Controls.Add(this.gbToppings);
             this.gbFormPizza.Controls.Add(this.gbCrustType);
             this.gbFormPizza.Controls.Add(this.gbWhereToEat);
+            this.gbFormPizza.Font = new System.Drawing.Font("Segoe Script", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbFormPizza.Location = new System.Drawing.Point(22, 73);
             this.gbFormPizza.Name = "gbFormPizza";
-            this.gbFormPizza.Size = new System.Drawing.Size(548, 310);
+            this.gbFormPizza.Size = new System.Drawing.Size(547, 310);
             this.gbFormPizza.TabIndex = 12;
             this.gbFormPizza.TabStop = false;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(111, 229);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(73, 28);
+            this.numericUpDown1.TabIndex = 10;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "N. Pizza";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::pizza.Properties.Resources.pizza_bg;
             this.ClientSize = new System.Drawing.Size(910, 461);
             this.Controls.Add(this.btnResetForm);
             this.Controls.Add(this.btnOrderPizza);
@@ -470,6 +520,7 @@
             this.gbToppings.ResumeLayout(false);
             this.gbToppings.PerformLayout();
             this.gbFormPizza.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,6 +560,8 @@
         private System.Windows.Forms.CheckBox chbMashrooms;
         private System.Windows.Forms.CheckBox chbExtraCheese;
         private System.Windows.Forms.GroupBox gbFormPizza;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

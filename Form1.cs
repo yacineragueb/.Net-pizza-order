@@ -123,7 +123,7 @@ namespace pizza
 
         float CalculateTotalPrice()
         {
-            return GetSelectedSizePrice() + CalculateToppingsPrice() + GetSelectedCrustPrice();
+            return (GetSelectedSizePrice() + CalculateToppingsPrice() + GetSelectedCrustPrice()) * Convert.ToSingle(numericUpDown1.Value);
         }
 
         void UpdateTotalPrice()
@@ -262,6 +262,11 @@ namespace pizza
         private void Form1_Load(object sender, EventArgs e)
         {
             UpdateOrderSummary();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
         }
     }
 }
